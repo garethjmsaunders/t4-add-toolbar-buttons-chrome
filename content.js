@@ -12,14 +12,16 @@
     }
 
     // Button config: [href, id, icon class, title, aria-label]
-    const buttons = [
-      ['group', 'group-management', 'fa fa-users', 'Group Management', 'Go to Group Management'],
-      ['user', 'user-management', 'fa fa-user', 'User Management', 'Go to User Management'],
-      ['mediaconfig#types', 'mediaconfig', 'fa fa-gear', 'Media Configuration', 'Go to the Media Configuration'],
+    // Buttons listed top to bottom, to be inserted left to right after sitemap icon.
+    const buttons = [      
       ['media', 'media-library', 'fa fa-image', 'Media Library', 'Go to the Media Library'],
+      ['mediaconfig#types', 'mediaconfig', 'fa fa-gear', 'Media Configuration', 'Go to the Media Configuration'],
+      ['user', 'user-management', 'fa fa-user', 'User Management', 'Go to User Management'],
+      ['group', 'group-management', 'fa fa-users', 'Group Management', 'Go to Group Management'],
     ];
 
-    for (const [href, id, iconClass, title, aria] of buttons) {
+    // Loop through buttons in reverse order, so they appear in correct order in the UI
+    [...buttons].reverse().forEach(([href, id, iconClass, title, aria]) => {
       const li = document.createElement('li');
       li.classList.add('js-sta-inject');
 
@@ -36,7 +38,7 @@
       a.appendChild(icon);
       li.appendChild(a);
       siteStructureLI.parentNode.insertBefore(li, siteStructureLI.nextSibling);
-    }
+    });
 
     console.log("✅ Toolbar icons successfully auto-injected.");
   };
