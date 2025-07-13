@@ -1,14 +1,14 @@
 {
   "manifest_version": 3,
   "name": "T4 Toolbar Icon Injector",
-  "version": "1.5.3",
-  "description": "Adds a Media Library icon after the Site Structure icon in Terminalfour.",
+  "version": "1.6.1",
+  "description": "Adds configurable toolbar icons after the Site Structure icon in Terminalfour.",
   "icons": {
     "16": "icon-16.png",
     "32": "icon-32.png",
     "128": "icon-128.png"
-   },
-  "permissions": [],
+  },
+  "permissions": ["storage"],
   "host_permissions": [
     "https://t4live.st-andrews.ac.uk/terminalfour/*",
     "https://www.st-andrews.ac.uk/terminalfour/*"
@@ -23,6 +23,7 @@
       "run_at": "document_idle"
     }
   ],
+  "options_page": "options.html",
   "action": {
     "default_title": "T4 Toolbar Icon Injector"
   }
