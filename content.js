@@ -1,4 +1,4 @@
-(function injectMediaLibraryIcon() {
+(function injectT4ToolbarIcons() {
   const tryInject = () => {
     const siteStructureLink = document.querySelector('a#site-structure');
     if (!siteStructureLink) {
@@ -11,24 +11,34 @@
       return;
     }
 
-    const newLI = document.createElement('li');
-    newLI.classList.add('js-sta-inject');
+    // Button config: [href, id, icon class, title, aria-label]
+    const buttons = [
+      ['group', 'group-management', 'fa fa-users', 'Group Management', 'Go to Group Management'],
+      ['user', 'user-management', 'fa fa-user', 'User Management', 'Go to User Management'],
+      ['mediaconfig#types', 'mediaconfig', 'fa fa-gear', 'Media Configuration', 'Go to the Media Configuration'],
+      ['media', 'media-library', 'fa fa-image', 'Media Library', 'Go to the Media Library'],
+    ];
 
-    const newA = document.createElement('a');
-    newA.href = 'media';
-    newA.id = 'media-library';
-    newA.className = 'ace-tooltip';
-    newA.setAttribute('title', 'Media Library');
-    newA.setAttribute('aria-label', 'Go to the Media Library');
+    for (const [href, id, iconClass, title, aria] of buttons) {
+      const li = document.createElement('li');
+      li.classList.add('js-sta-inject');
 
-    const newIcon = document.createElement('i');
-    newIcon.className = 'ace-icon fa fa-image';
+      const a = document.createElement('a');
+      a.href = href;
+      a.id = id;
+      a.className = 'ace-tooltip';
+      a.setAttribute('title', title);
+      a.setAttribute('aria-label', aria);
 
-    newA.appendChild(newIcon);
-    newLI.appendChild(newA);
+      const icon = document.createElement('i');
+      icon.className = `ace-icon ${iconClass}`;
 
-    siteStructureLI.parentNode.insertBefore(newLI, siteStructureLI.nextSibling);
-    console.log("✅ Media Library icon successfully auto-injected.");
+      a.appendChild(icon);
+      li.appendChild(a);
+      siteStructureLI.parentNode.insertBefore(li, siteStructureLI.nextSibling);
+    }
+
+    console.log("✅ Toolbar icons successfully auto-injected.");
   };
 
   tryInject();
