@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "T4 Toolbar Icon Injector",
-  "version": "1.7.6",
+  "version": "1.8.0",
   "description": "Adds configurable toolbar icons after the Site Structure icon in Terminalfour.",
   "icons": {
     "16": "icon-16.png",
@@ -11,13 +11,15 @@
   "permissions": ["storage"],
   "host_permissions": [
     "https://t4live.st-andrews.ac.uk/terminalfour/*",
-    "https://www.st-andrews.ac.uk/terminalfour/*"
+    "https://www.st-andrews.ac.uk/terminalfour/*",
+    "https://t4dev.st-andrews.ac.uk/terminalfour/*"
   ],
   "content_scripts": [
     {
       "matches": [
         "https://t4live.st-andrews.ac.uk/terminalfour/*",
-        "https://www.st-andrews.ac.uk/terminalfour/*"
+        "https://www.st-andrews.ac.uk/terminalfour/*",
+        "https://t4dev.st-andrews.ac.uk/terminalfour/*"
       ],
       "js": ["content.js"],
       "run_at": "document_idle"
