@@ -48,6 +48,8 @@ You can choose which of these buttons appear in the T4 toolbar by using the exte
 - ⚙️ **Media Configuration** – Go to the Media Configuration (`mediaconfig#types`)
 - 👤 **User Management** – Manage user accounts in T4
 - 👥 **Group Management** – Manage user groups in T4
+- 🧩 **Content Type Usage** – See which content types are in use
+- 🔁 **Clear the Cache** – Rebuild the T4 Cache
 
 > Use the **Options panel** to enable or disable individual buttons.
 
