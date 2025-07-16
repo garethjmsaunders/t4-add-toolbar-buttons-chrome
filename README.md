@@ -12,12 +12,37 @@ This Chrome extension adds extra buttons to the Terminalfour (T4 v8) toolbar, ju
 
 ---
 
+## ✅ Compatible browsers
+
+This extension has been tested successfully in the following Chromium-based browsers on Windows 11:
+
+- [Google Chrome](https://www.google.com/chrome/)
+- [Brave](https://brave.com/)
+- [Opera](https://www.opera.com/)
+- [Vivaldi](https://vivaldi.com/)
+
+A Firefox/Gecko-compatible version is in progress.
+
+---
+
 ## 🖥️ How to use
 
 1. **Install the extension** (see below)
 2. Open Terminalfour (T4) as usual.
 3. Look for new toolbar buttons next to the Site Structure icon.
 4. Click any added button to open the corresponding section in T4.
+
+---
+
+## 📦 How to install
+
+1. Download the zip file (Click the green `<> Code` button and select Download ZIP.)
+2. Unzip the extension folder to a folder location where you want to store this.
+3. Open your browser and visit `chrome://extensions`.
+4. Turn on **Developer mode** (top right).
+5. Click **Load unpacked**.
+6. Select the unzipped folder.
+7. The toolbar button should now appear on your browser toolbar.
 
 ---
 
@@ -29,7 +54,7 @@ You can choose which buttons appear by visiting the extension’s **Options pane
 
 ![Options screen allowing users to select which additional toolbar buttons to show](options.png "Options screen")
 
-1. **Right-click the T4 icon** 🖱️ in the Chrome toolbar and select **Options**.
+1. **Right-click the T4 icon** 🖱️ in the browser toolbar and select **Options**.
 2. Select which toolbar buttons you wish to show.
 3. Click Save.
 
@@ -62,15 +87,3 @@ You can choose which of these buttons appear in the T4 toolbar by using the exte
 - 🔁 **Clear the Cache** – Rebuild the T4 Cache
 
 > Use the **Options panel** to enable or disable individual buttons.
-
----
-
-## 📦 Installation in Chrome
-
-1. Download and unzip the extension folder
-2. Visit `chrome://extensions`
-3. Turn on **Developer mode** (top right)
-4. Click **Load unpacked**
-5. Select the unzipped folder
-
-The toolbar button should now appear in Chrome.

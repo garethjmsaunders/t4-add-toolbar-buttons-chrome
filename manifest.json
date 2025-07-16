@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "T4 Add Toolbar Buttons",
-  "version": "1.9.0",
+  "version": "1.9.1",
   "description": "Adds configurable toolbar icons after the Site Structure icon in Terminalfour.",
   "icons": {
     "16": "icon-16.png",
