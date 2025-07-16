@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "T4 Toolbar Icon Injector",
-  "version": "1.8.1",
+  "name": "T4 Add Toolbar Buttons",
+  "version": "1.9.0",
   "description": "Adds configurable toolbar icons after the Site Structure icon in Terminalfour.",
   "icons": {
     "16": "icon-16.png",
@@ -27,6 +27,6 @@
   ],
   "options_page": "options.html",
   "action": {
-    "default_title": "T4 Toolbar Icon Injector"
+    "default_title": "T4 Add Toolbar Buttons"
   }
 }

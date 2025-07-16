@@ -27,20 +27,28 @@ You can choose which buttons appear by visiting the extension’s **Options pane
 
 ### 🔧 Ways to open the options:
 
-- Go to `chrome://extensions`
-  1. Find **T4 Add Toolbar Buttons**
-  2. Click **Details**
-  3. Click **Extension options**
+1. **Right-click the T4 icon** 🖱️ in the Chrome toolbar and select **Options**.
+2. Select which toolbar buttons you wish to show.
+3. Click Save.
+
+> 💡 Changes take effect immediately — just refresh your T4 browser tab.
 
 **or**
 
-- 🖱️ **Right-click the T4 icon** in the Chrome toolbar and select **Options**
+1. Go to `chrome://extensions`.
+2. Find **T4 Add Toolbar Buttons**.
+3. Click **Details**.
+4. Click **Extension options**.
+5. Select which toolbar buttons you wish to show.
+6. Click Save.
 
-> 💡 Changes take effect immediately — just refresh your T4 tab.
+> 💡 Changes take effect immediately — just refresh your T4 browser tab.
 
 ---
 
 ## 🧪 Available toolbar buttons
+
+![Toolbar showing new buttons](toolbar.png "a title")
 
 You can choose which of these buttons appear in the T4 toolbar by using the extension’s options panel:
 
