@@ -21,7 +21,7 @@ This extension has been tested successfully in the following Chromium-based brow
 - [Opera](https://www.opera.com/)
 - [Vivaldi](https://vivaldi.com/)
 
-A Firefox/Gecko-compatible version is in progress.
+A [Firefox/Gecko-compatible version is also available](https://github.com/garethjmsaunders/t4-add-toolbar-buttons-firefox).
 
 ---
 
